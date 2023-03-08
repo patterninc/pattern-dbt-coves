@@ -116,11 +116,11 @@ class GenerateSourcesTask(BaseGenerateTask):
     def generate(self, rels):
         models_destination = self.get_config_value("models_destination")
         options = {
-            "override_all": "Yes" if self.no_prompt else None,
+            "override_all": "No" if self.no_prompt else None,
             "flatten_all": "No" if self.no_prompt else None,
-            "model_prop_update_all": False,
+            "model_prop_update_all": True,
             "model_prop_recreate_all": False,
-            "source_prop_update_all": False,
+            "source_prop_update_all": True,
             "source_prop_recreate_all": False,
         }
         for rel in rels:
