@@ -124,6 +124,7 @@ class RunDbtModel(BaseModel):
     command: Optional[str] = ""
     project_dir: Optional[str] = ""
     virtualenv: Optional[str] = ""
+    cleanup: Optional[bool] = False
 
 
 class ConfigModel(BaseModel):
@@ -183,6 +184,7 @@ class DbtCovesConfig:
         "dbt.command",
         "dbt.project_dir",
         "dbt.virtualenv",
+        "dbt.cleanup",
         "extract.fivetran.path",
         "extract.fivetran.api_key",
         "extract.fivetran.api_secret",
