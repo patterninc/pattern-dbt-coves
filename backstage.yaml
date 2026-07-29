@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pattern-dbt-coves
+  description: 'A Onboard an Existing Repo to Backstage created via Backstage'
+  annotations:
+    repo: patterninc/pattern-dbt-coves
+  labels:
+    CostCenter: DATASCIENCE
+    Environment: stage
+    Name: pattern-dbt-coves
+    Owner: business-intelligence
+    Department: BusinessIntelligence
+    CreatedBy: Backstage
+spec:
+  type: service
+  system: datascience
